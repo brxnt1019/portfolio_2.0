@@ -1,0 +1,122 @@
+/* StyleSheet for Brent Hennety's Portfolio */
+/* Created by Brent J Hennety Jr*/
+/* Began 1/13/21 */
+/* Last edited: 1/25/21*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e1e1e1;
+}
+
+/* Top Nav Bar */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #141414;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  float: left;
+  color: #f3f3f3;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #141414;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add opacity on mouse-over */
+.topnav a:hover {
+  background-color: #f3f3f3;
+  color: #141414;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #141414;
+  color: #f3f3f3;
+}
+/* Welcome section */
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.welcome-greeting {
+  font-size: 1.5rem;
+}
+
+.welcome-btn button {
+  width: 120px;
+  height: 22px;
+  margin-left: 10%;
+  background-color: #141414;
+  color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 4px 10px 30px #141414;
+  border: none;
+}
+
+.welcome-btn button:hover {
+  color: #141414;
+  background-color: #e1e1e1;
+  transition: all ease 0.3s;
+}
+
+.contact-greeting {
+  font-size: 1.5rem;
+}
+
+.contact-info {
+  color: #141414;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  color: #141414;
+  justify-content: space-evenly;
+  padding: 33px;
+}
+
+.contact-info i:hover {
+  opacity: 0.3;
+  color: black;
+  transition: all ease 0.3s;
+}
+
+/* About Section */
+
+.about-greeting {
+  font-size: 1.5rem;
+}
+
+.about-info {
+  font-size: 1.2rem;
+}
+
+.about-box p {
+  text-indent: 10px;
+}
