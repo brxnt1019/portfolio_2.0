@@ -127,4 +127,8 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .welcome-greeting {
+    margin: 10pc;
+  }
 }
