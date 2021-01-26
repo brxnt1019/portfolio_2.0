@@ -111,24 +111,24 @@ body {
 /* About Section */
 
 .about-greeting {
-  font-size: 1.5rem;
+  padding-bottom: 30px;
 }
 
 .about-info {
-  font-size: 1.2rem;
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column;
+  line-height: 33px;
 }
 
 .about-box p {
   text-indent: 10px;
+  font-style: italic;
 }
 
 @media screen and (max-width: 600px) {
   #welcome-section {
     display: flex;
     flex-direction: column;
-  }
-
-  .welcome-greeting {
-    margin: 10px;
   }
 }
