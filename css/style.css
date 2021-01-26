@@ -10,6 +10,7 @@
 
 body {
   background-color: #e1e1e1;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Top Nav Bar */
@@ -48,6 +49,7 @@ body {
 .topnav a:hover {
   background-color: #f3f3f3;
   color: #141414;
+  transition: all ease 0.4s;
 }
 
 /* Style the active link (or home/logo) */
@@ -75,15 +77,14 @@ body {
   margin-left: 10%;
   background-color: #141414;
   color: #f3f3f3;
+  border: none;
   border-radius: 10px;
   box-shadow: 4px 10px 30px #141414;
-  border: none;
+  transition: all ease 0.3s;
 }
 
 .welcome-btn button:hover {
-  color: #141414;
-  background-color: #e1e1e1;
-  transition: all ease 0.3s;
+  opacity: 0.3;
 }
 
 .contact-greeting {
