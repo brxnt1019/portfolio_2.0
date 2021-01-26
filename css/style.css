@@ -121,3 +121,10 @@ body {
 .about-box p {
   text-indent: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
