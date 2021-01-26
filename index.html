@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/project-style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./app.js"></script>
     <title>brenthennety.com</title>
   </head>
@@ -20,8 +25,8 @@
         <a href="./index.html" class="active">Welcome</a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
+          <a href="#about-section">Skills</a>
           <a href="./projects.html">Projects</a>
-          
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="hideLinks()">
@@ -56,37 +61,95 @@
             </button>
           </div>
         </div>
+      </div>
 
-        <!-- About Sectiob -->
-        <div id="about-section">
-          <div class="about-greeting">
-            <h6>Skills</h6>
+      <!-- About Sectiob -->
+      <div id="about-section">
+        <div class="about-greeting">
+          <h4>Skills</h4>
+        </div>
+        <div class="about-info">
+          <div class="about-box">
+            <h3>Hypertext Markup Language (HTML)</h3>
+            <p>
+              Over One year experience with HTML working on over a dozen
+              projects.
+            </p>
           </div>
-          <div class="about-info">
-            <div class="about-box">
-              <h3>Hypertext Markup Language (HTML)</h3>
-              <p>
-                Over One year experience with HTML working on over a dozen
-                projects.
-              </p>
-            </div>
-            <div class="about-box">
-              <h3>Cascading Style Sheet (CSS)</h3>
-              <p>
-                Over One year experience with CSS working on over a dozen
-                projects.
-              </p>
-            </div>
-            <div class="about-box">
-              <h3>Javascript (js)</h3>
-              <p>
-                Over One year experience with js working on over a dozen
-                projects.
-              </p>
-            </div>
+          <div class="about-box">
+            <h3>Cascading Style Sheet (CSS)</h3>
+            <p>
+              Over One year experience with CSS working on over a dozen
+              projects.
+            </p>
+          </div>
+          <div class="about-box">
+            <h3>Javascript (js)</h3>
+            <p>
+              Over One year experience with js working on over a dozen projects.
+            </p>
           </div>
         </div>
-
+      </div>
+      <!---------------- Projects   ------------------------>
+      <div id="project-section">
+        <section>
+            <h4>Projects</h4>
+            <h6>(Links currently unavailable)</h6>
+        
+            <div class="container">
+              <div class="item" id="1">
+                <img src="./images/wildcajun.png" alt="The Wild Cajun">
+                <div class="text">
+                  <h3>The Wild Cajun</h4>
+                  <p>The Wild Cajun is a simply designed website clone for a business that sells seafood in the Fortworth, Tx area.</p>
+                </div>
+                <div class="button">Learn More</div>
+              </div>
+        
+              <div class="item" id="2">
+                <img src="./images/calc-pic.png" alt="">
+                <div class="text">
+                  <h3>Simple Calculator</h4>
+                  <p>Calculator using javascript, css, and html</p>
+                </div>
+                <div class="button">Learn More</div>
+              </div>
+        
+              <div class="item" id="3">
+                <img src="./images/clock-pic.png" alt="">
+                <div class="text">
+                    <h3>Simple Clock</h4>
+                  <p>Clock made with javascript, html, and css</p>
+                  </div>
+                  <div class="button">Learn More</div>
+              </div>
+        
+              <div class="item" id="4">
+                <img src="./images/todo-pic.png" alt="">
+                <div class="text">
+                  <h3>To Do list</h4>
+                  <p>To Do list created with javascript, html, and css</p>
+                </div>
+                <div class="button">Learn More</div>
+              </div>
+          </div>
+        
+          <!-- Modal -->
+          <div id="preview" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img id="img" src="">
+              <div id="details">
+                <h3 id="title"></h3>
+                <p id="info">Some text</p>
+                <div class="button" id="live">View</div>
+                  <i class="fab fa-github-square" id="github"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
     </main>
   </body>
 </html>
