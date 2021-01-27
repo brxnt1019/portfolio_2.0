@@ -436,9 +436,6 @@ i:hover {
     flex-direction: column;
   }
 
-  #about-section {
-  }
-
   #skills-cards {
     flex-direction: column;
     overflow: auto;
