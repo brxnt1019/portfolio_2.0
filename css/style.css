@@ -113,7 +113,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .about-greeting {
@@ -122,12 +121,10 @@ body {
 
 .about-info {
   display: flex;
-  justify-self: flex-start;
-  flex-direction: column;
   line-height: 33px;
 }
 .about-box {
-  padding: 0 0 10px 10px;
+  padding: 0 5px 10px 10px;
 }
 
 .about-box p {
@@ -135,19 +132,57 @@ body {
   font-style: italic;
 }
 
+#footer-section {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-start;
+  opacity: 0.3;
+}
+
+#footer-section a {
+  text-decoration: none;
+  color: #141414;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   #welcome-section {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
 
   #about-section {
+    width: 100%;
+    height: 45vh;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #project-section {
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
+  }
+
+  #footer-section {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+    opacity: 0.3;
+    padding: ;
+  }
+
+  #footer-section .contact-info {
+    font-size: 10px;
   }
 }
