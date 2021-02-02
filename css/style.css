@@ -1,7 +1,7 @@
 /* StyleSheet for Brent Hennety's Portfolio */
 /* Created by Brent J Hennety Jr*/
 /* Began 1/13/21 */
-/* Last edited: 1/26/21*/
+/* Last edited: 2/1/21  */
 
 * {
   margin: 0;
@@ -18,7 +18,8 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #141414;
-  position: relative;
+  position: fixed;
+  width: 100vw;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -110,21 +111,17 @@ body {
 /* Skills Section */
 #about-section {
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.about-greeting {
-  padding: 0 0 30px 30px;
-}
-
 /*  cards   */
 #skills-cards {
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,24 +147,6 @@ body {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
-
-.card-image {
-  grid-area: image;
-}
-.card-text {
-  grid-area: text;
-  margin: 25px;
-}
-.card-stats {
-  grid-area: stats;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: #141414;
-}
-
 .card-image-html {
   grid-area: image;
   background: url("https://gitconnected.com/public/images/tutorials/html-5");
@@ -188,6 +167,19 @@ body {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: contain;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #141414;
 }
 
 .card-text .tag {
@@ -210,198 +202,101 @@ body {
 }
 
 /*   Project Section     */
-section {
+#project-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background-color: #f3f3f3;
-}
-
-#project-section h4 {
-  padding: 0 0 10px 0;
-}
-
-#project-section h6 {
-  font-size: 8px;
-}
-
-.container {
-  margin-top: 50px;
+  height: 75vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-card-section {
+  width: 80%;
+  height: 750vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
-  width: 80%;
+  overflow: auto;
 }
 
-.item {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 410px;
-  width: 100%;
+.project-card {
+  display: grid;
+  grid-template-columns: 310px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "more";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: "roboto";
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-}
-
-.item:hover {
+  transition: 0.5s ease;
   cursor: pointer;
+  margin: 30px;
 }
 
-.item * {
-  transition: all 0.35s ease-in-out;
+.project-card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
-img {
-  max-width: 100%;
-  vertical-align: top;
-  height: 310px;
+.project-card-image-wildcajun {
+  grid-area: image;
+  background: url("./imgages/wildcajun.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: contain;
 }
 
-.item:hover img {
-  opacity: 0;
+.project-card-image-calc {
+  grid-area: image;
+  background: url("./images/calc-pic.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: contain;
 }
 
-.text {
-  width: 80%;
-  height: 90%;
-  position: absolute;
-  top: -100px;
-  left: 10%;
-  color: #01a2ac;
+.project-card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.project-card-more {
+  grid-area: more;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #141414;
 }
 
-.text h3 {
-  color: black;
+.project-card .tag {
+  color: rgb(255, 7, 110);
+  font-size: 13px;
 }
 
-.item:hover .text {
-  top: 20%;
+.project-card h2 {
+  margin-top: 0px;
+  font-size: 16px;
 }
 
-.item:hover .button {
-  bottom: 20%;
+.project-card-more .project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f3f3f3;
+  padding: 10px;
 }
 
-.item .button {
-  position: absolute;
-  bottom: -100px;
-  left: 25%;
-  width: 50%;
-  border: 3px solid #01a2ac;
-  padding: 15px;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-
-.button:hover {
-  background-color: #01a2ac;
+.project-card-more .project-link a {
+  text-decoration: none;
   color: #f3f3f3;
 }
 
-/* Modal */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #f5f5f5;
-  margin: 5% auto;
-  box-sizing: border-box;
-  width: 700px;
-  max-height: 714px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-.scale {
-  animation: scale 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes scale {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-#img {
-  width: 100%;
-  height: 450px;
-}
-
-#details {
-  padding: 25px;
-  text-align: left;
-  position: relative;
-  height: 264px;
-  box-sizing: border-box;
-  border-top: 1px solid #363638;
-}
-
-#details * {
-  transition: all 0.3s;
-}
-
-#title {
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#details .button {
-  position: absolute;
-  width: 30%;
-  background-color: #01a2ac;
-  color: #f5f5f5;
-  text-align: center;
-  left: 25px;
-  bottom: 35px;
-  padding: 15px;
-}
-
-#details i {
-  position: absolute;
-  bottom: 30px;
-  right: 25px;
-  font-size: 3rem;
-  color: #01a2ac;
-}
-
-#details .button:hover,
-i:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-/* Close Button */
-.close {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  right: 10px;
-}
-
-.close:hover,
-.close:focus {
-  color: #363638;
-  text-decoration: none;
-  cursor: pointer;
+.project-more .project-link a:hover {
+  text-decoration: underline;
 }
 
 /*    Footer Sectiobn       */
@@ -410,7 +305,7 @@ i:hover {
   height: 10vh;
   display: flex;
   justify-content: space-around;
-  align-self: flex-start;
+  align-self: center;
   opacity: 0.3;
 }
 
@@ -420,39 +315,22 @@ i:hover {
   cursor: pointer;
 }
 
+.contact-info-foot {
+  color: #141414;
+}
+
+.contact-info-foot i {
+  color: #141414;
+  justify-content: center;
+  padding-right: 20px;
+}
+
+.contact-info-foot i:hover {
+  opacity: 0.3;
+  color: black;
+  transition: all ease 0.3s;
+}
+
 /*  Responsive   */
 @media screen and (max-width: 900px) {
-  #welcome-section {
-    flex-direction: column;
-  }
-
-  #skills-cards {
-    justify-content: space-between;
-    overflow: auto;
-  }
-
-  #about-section {
-    width: max-content;
-  }
-
-  .card {
-    grid-template-columns: 200px;
-    grid-template-rows: 80px 110px 40px;
-    grid-template-areas: "image" "text" "stats";
-    margin: 10px;
-  }
-
-  #project-section {
-    overflow: auto;
-  }
-
-  .container {
-    margin-top: 20px;
-    width: 100%;
-    overflow: auto;
-  }
-
-  #footer-section .contact-info {
-    font-size: 10px;
-  }
 }
