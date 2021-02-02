@@ -343,4 +343,9 @@ body {
     grid-template-columns: 150px;
     grid-template-rows: 80px 80px 60px;
   }
+
+  #footer-section {
+    height: 5vh;
+    justify-content: space-evenly;
+  }
 }
