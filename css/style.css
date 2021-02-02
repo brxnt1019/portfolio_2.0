@@ -341,7 +341,7 @@ body {
   .card {
     display: grid;
     grid-template-columns: 150px;
-    grid-template-rows: 80px 80px 60px;
+    grid-template-rows: 70px 98px 48px;
   }
 
   #footer-section {
