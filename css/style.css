@@ -333,4 +333,14 @@ body {
 
 /*  Responsive   */
 @media screen and (max-width: 900px) {
+  /*  cards   */
+  #skills-cards {
+    justify-content: space-around;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 80px 80px 60px;
+  }
 }
