@@ -20,6 +20,7 @@ body {
   background-color: #141414;
   position: fixed;
   width: 100vw;
+  z-index: 1;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -111,17 +112,18 @@ body {
 /* Skills Section */
 #about-section {
   width: 100vw;
-  height: 75vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 150px;
 }
 
 /*  cards   */
 #skills-cards {
   width: 100%;
-  height: 75vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +170,13 @@ body {
   border-top-right-radius: 15px;
   background-size: contain;
 }
+.card-image-py {
+  grid-area: image;
+  background: url("https://analyticsindiamag.com/wp-content/uploads/2019/10/python-1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
 .card-text {
   grid-area: text;
   margin: 25px;
@@ -204,7 +213,7 @@ body {
 /*   Project Section     */
 #project-section {
   width: 100%;
-  height: 75vh;
+  height: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +252,7 @@ body {
 
 .project-card-image-wildcajun {
   grid-area: image;
-  background: url("./imgages/wildcajun.png");
+  background: url("https://thewildcajun.com/wp-content/uploads/2020/06/twcajun_SK08aA01a.png");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: contain;
@@ -251,7 +260,23 @@ body {
 
 .project-card-image-calc {
   grid-area: image;
-  background: url("./images/calc-pic.png");
+  background: url("https://webdevtrick.com/wp-content/uploads/html-css-javascript-calculator.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.project-card-image-todo {
+  grid-area: image;
+  background: url("https://jsbeginners.com/wp-content/uploads/2019/09/todolist-project-bluelime.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.project-card-image-clock {
+  grid-area: image;
+  background: url("https://i.ytimg.com/vi/Ki0XXrlKlHY/maxresdefault.jpg");
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: contain;
@@ -332,18 +357,10 @@ body {
 /*  Responsive   */
 @media screen and (max-width: 900px) {
   /*  cards   */
-  #skills-cards {
-    justify-content: space-around;
-  }
 
   .card {
     display: grid;
     grid-template-columns: 150px;
     grid-template-rows: 70px 98px 48px;
-  }
-
-  #footer-section {
-    height: 5vh;
-    justify-content: space-evenly;
   }
 }
