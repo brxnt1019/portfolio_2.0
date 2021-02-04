@@ -109,15 +109,59 @@ body {
   transition: all ease 0.3s;
 }
 
-/* Skills Section */
+/*   About section  */
 #about-section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 80px 150px;
+  grid-template-areas: "head" "text";
+  background: transparent;
+  color: #141414;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.about-box:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+.head {
+  grid-area: head;
+  margin: 20px;
+}
+
+.text {
+  grid-area: text;
+  margin: 25px;
+}
+
+/* Skills Section */
+#skills-section {
   width: 100vw;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 150px;
 }
 
 /*  cards   */
@@ -127,7 +171,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .card {
@@ -208,6 +252,25 @@ body {
   flex-direction: column;
   color: white;
   padding: 10px;
+}
+
+/*  Service section   */
+/* uses box classes from about section  */
+#service-section {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#service-container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
 }
 
 /*   Project Section     */
@@ -356,11 +419,33 @@ body {
 
 /*  Responsive   */
 @media screen and (max-width: 900px) {
-  /*  cards   */
-
   .card {
     display: grid;
     grid-template-columns: 150px;
     grid-template-rows: 70px 98px 48px;
+  }
+
+  #about-section {
+    height: min-content;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  #skills-section {
+    height: min-content;
+  }
+
+  #skills-cards {
+    flex-direction: column;
+  }
+
+  #service-section {
+    height: min-content;
+  }
+
+  #service-container {
+    flex-direction: column;
   }
 }
