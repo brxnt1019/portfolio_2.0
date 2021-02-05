@@ -134,7 +134,7 @@ body {
   grid-template-columns: 350px;
   grid-template-rows: 80px 150px;
   grid-template-areas: "head" "text";
-  background: transparent;
+
   color: #141414;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
