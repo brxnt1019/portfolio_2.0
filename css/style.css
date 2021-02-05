@@ -453,11 +453,12 @@ body {
   }
 
   #about-section {
-    height: min-content;
+    height: max-content;
   }
 
   #container {
     flex-direction: column;
+    height: fit-content;
   }
 
   #skills-section {
@@ -474,5 +475,14 @@ body {
 
   #service-container {
     flex-direction: column;
+    height: fit-content;
+  }
+
+  #projext-section {
+    height: max-content;
+  }
+
+  .project-card-section {
+    height: fit-content;
   }
 }
