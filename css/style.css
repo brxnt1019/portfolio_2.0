@@ -1,11 +1,12 @@
 /* StyleSheet for Brent Hennety's Portfolio */
 /* Created by Brent J Hennety Jr*/
 /* Began 1/13/21 */
-/* Last edited: 2/1/21  */
+/* Last edited: 2/5/21  */
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +20,8 @@ body {
   overflow: hidden;
   background-color: #141414;
   position: fixed;
-  width: 100vw;
+  width: 100%;
+  top: 0;
   z-index: 1;
 }
 
@@ -136,22 +138,47 @@ body {
   color: #141414;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  transition: 0.5s ease;
+  transition: 0.75s ease-in-out;
   cursor: pointer;
 }
 
-.about-box:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-}
-.head {
+.about-box .head {
   grid-area: head;
+}
+.about-box .text {
+  grid-area: text;
+  text-align: center;
   margin: 20px;
 }
 
-.text {
-  grid-area: text;
-  margin: 25px;
+.about-box:nth-child(1) .head .text {
+  color: #23e123;
+}
+.about-box:nth-child(1):hover {
+  background-color: #23e123;
+  color: #f3f3f3;
+  transform: rotate(360deg);
+}
+
+.about-box:nth-child(2) .head .text {
+  color: #ff235a;
+}
+.about-box:nth-child(2):hover {
+  background-color: #ff235a;
+  color: #f3f3f3;
+  transform: rotate(360deg);
+}
+.about-box:nth-child(3) .head .text {
+  color: #2233dd;
+}
+.about-box:nth-child(3):hover {
+  background-color: #2233dd;
+  color: #f3f3f3;
+  transform: rotate(360deg);
+}
+
+.head h6 {
+  margin-top: 20px;
 }
 
 /* Skills Section */
