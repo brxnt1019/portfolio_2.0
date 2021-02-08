@@ -7,8 +7,9 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -120,7 +121,7 @@
 
         <div id="skills-cards">
           <!-----     HTML card     ---->
-          <div class="card">
+          <div class="skill-card">
             <div class="card-image-html"></div>
             <div class="card-text">
               <span class="tag">HTML</span>
@@ -139,7 +140,7 @@
           </div>
 
           <!----- CSS Card  ---->
-          <div class="card">
+          <div class="skill-card">
             <div class="card-image-css"></div>
             <div class="card-text">
               <span class="tag">CSS</span>
@@ -158,7 +159,7 @@
           </div>
 
           <!-------  js card  ----->
-          <div class="card">
+          <div class="skill-card">
             <div class="card-image-js"></div>
             <div class="card-text">
               <span class="tag">js</span>
@@ -178,7 +179,7 @@
 
           <!--     python card       -->
 
-          <div class="card">
+          <div class="skill-card">
             <div class="card-image-py"></div>
             <div class="card-text">
               <span class="tag">py</span>
@@ -200,43 +201,72 @@
 
       <!--     Service section          -->
       <div id="service-section">
-        <div class="about-header">
-          <h4>Services</h4>
-        </div>
-        <div id="service-container">
-          <div class="about-box">
-            <div class="head">
-              <h6>Advice</h6>
+        <h2>Services</h2>
+        <div class="container">
+          <div class="card">
+            <div class="img-box" data-text="Design">
+              <span><i class="fa fa-edit fa-5x"></i></span>
             </div>
-            <div class="text">
-              <p>
-                Are you interested in coding but have no clue where to start?
-                Talk to me about your worries. I can tell you how I got started,
-                what tools I used, and what I found helpful.
-              </p>
-            </div>
-          </div>
-          <div class="about-box">
-            <div class="head">
-              <h6>Web Design</h6>
-            </div>
-            <div class="text">
-              <p>
-                Do you have a small business? Have great ideas that you want to
-                share? Need an online portfolio for your work? I can design a
-                custum website to fit your particular style!
-              </p>
+            <div class="content">
+              <div>
+                <h3>Design</h3>
+                <p>
+                  Step 1: Let's discuss how you want your webpage to look. We
+                  will talk about layout, color, pictures, animations, and
+                  effects.
+                </p>
+                <a href="#">Read More</a>
+              </div>
             </div>
           </div>
-          <div class="about-box">
-            <div class="head">
-              <h6>Collaboration</h6>
+
+          <div class="card">
+            <div class="img-box" data-text="Code">
+              <span><i class="fa fa-code fa-5x"></i></span>
             </div>
-            <div class="text">
-              <p>
-                Collaborate with me on a project you are working on. We can
-                divide some of the work load to ensure you meet a deadline!
-              </p>
+            <div class="content">
+              <div>
+                <h3>Code</h3>
+                <p>
+                  Step 2: We start writing the code for your webpage, keeping
+                  your wants and ideas in mind throughout the process.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-box" data-text="Launch">
+              <span><i class="fa fa-rocket fa-5x"></i></span>
+            </div>
+            <div class="content">
+              <div>
+                <h3>Launch</h3>
+                <p>
+                  Step 3: After the website is designed and the code is
+                  developed, we can discuss purchasing a domain name for you
+                  webpage, as well as getting it hosted, and launched to the
+                  internet.
+                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-box" data-text="Earn">
+              <span><i class="fa fa-dollar-sign fa-5x"></i></span>
+            </div>
+            <div class="content">
+              <div>
+                <h3>Earn</h3>
+                <p>
+                  Step 4: The last and final step is to sit back and let your
+                  webpage earn you money!
+                </p>
+                <a href="#">Read More</a>
+              </div>
             </div>
           </div>
         </div>
