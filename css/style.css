@@ -340,7 +340,8 @@ h4 {
   width: 100%;
   text-align: center;
   font-size: 6rem;
-  color: rgba(255, 255, 255, 0.03);
+  color: #141414;
+  opacity: 0.3;
   font-weight: 700;
 }
 
