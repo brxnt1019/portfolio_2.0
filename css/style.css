@@ -13,6 +13,10 @@ body {
   background-color: #f3f3f3;
   font-family: "Roboto", sans-serif;
 }
+h4 {
+  color: #6203fc;
+  font-weight: 900;
+}
 
 /* Top Nav Bar */
 /* Style the navigation menu */
